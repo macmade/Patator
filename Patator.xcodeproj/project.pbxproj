@@ -184,6 +184,7 @@
 		054B60EA1FC75ACF00DA06E2 /* All-Languages.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "All-Languages.xcconfig"; sourceTree = "<group>"; };
 		054B60EB1FC75ACF00DA06E2 /* Preprocessing.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Preprocessing.xcconfig; sourceTree = "<group>"; };
 		054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Capstone.xcodeproj; path = Submodules/capstone/xcode/Capstone.xcodeproj; sourceTree = "<group>"; };
+		054B61631FC7602D00DA06E2 /* Search-Paths.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Search-Paths.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +266,7 @@
 				054B60C81FC75ACF00DA06E2 /* Architectures.xcconfig */,
 				054B60D21FC75ACF00DA06E2 /* Build-Options.xcconfig */,
 				054B60D11FC75ACF00DA06E2 /* Deployment.xcconfig */,
+				054B61631FC7602D00DA06E2 /* Search-Paths.xcconfig */,
 				054B60C71FC75ACF00DA06E2 /* Signing.xcconfig */,
 				054B60C91FC75ACF00DA06E2 /* Static-Analyzer */,
 				054B60D41FC75ACF00DA06E2 /* Static-Analyzer.xcconfig */,
