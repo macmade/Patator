@@ -12,6 +12,8 @@
 		054B60BE1FC7579A00DA06E2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 054B60BD1FC7579A00DA06E2 /* README.md */; };
 		054B61601FC75E8A00DA06E2 /* Capstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054B61441FC75E7D00DA06E2 /* Capstone.framework */; };
 		054B61621FC75E9700DA06E2 /* Capstone.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054B61441FC75E7D00DA06E2 /* Capstone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		054B617B1FC7613D00DA06E2 /* XSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054B61781FC7612A00DA06E2 /* XSKit.framework */; };
+		054B617C1FC7614500DA06E2 /* XSKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054B61781FC7612A00DA06E2 /* XSKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +129,20 @@
 			remoteGlobalIDString = DC474F6719DE6F3B00BCA449;
 			remoteInfo = CapstoneFramework;
 		};
+		054B61771FC7612A00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B61651FC7612A00DA06E2 /* XSKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0581B3421F8BF5F700283F18;
+			remoteInfo = XSKit;
+		};
+		054B61791FC7613700DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B61651FC7612A00DA06E2 /* XSKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0581B3411F8BF5F700283F18;
+			remoteInfo = XSKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -136,6 +152,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				054B617C1FC7614500DA06E2 /* XSKit.framework in CopyFiles */,
 				054B61621FC75E9700DA06E2 /* Capstone.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +202,7 @@
 		054B60EB1FC75ACF00DA06E2 /* Preprocessing.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Preprocessing.xcconfig; sourceTree = "<group>"; };
 		054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Capstone.xcodeproj; path = Submodules/capstone/xcode/Capstone.xcodeproj; sourceTree = "<group>"; };
 		054B61631FC7602D00DA06E2 /* Search-Paths.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Search-Paths.xcconfig"; sourceTree = "<group>"; };
+		054B61651FC7612A00DA06E2 /* XSKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XSKit.xcodeproj; path = Submodules/XSKit/XSKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +210,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054B617B1FC7613D00DA06E2 /* XSKit.framework in Frameworks */,
 				054B61601FC75E8A00DA06E2 /* Capstone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */,
+				054B61651FC7612A00DA06E2 /* XSKit.xcodeproj */,
 				054B60C11FC75ACF00DA06E2 /* xcconfig */,
 				054B60BD1FC7579A00DA06E2 /* README.md */,
 				054B60A61FC755D500DA06E2 /* Patator */,
@@ -374,6 +394,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		054B61661FC7612A00DA06E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				054B61781FC7612A00DA06E2 /* XSKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -389,6 +417,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				054B617A1FC7613700DA06E2 /* PBXTargetDependency */,
 				054B615E1FC75E8700DA06E2 /* PBXTargetDependency */,
 			);
 			name = Patator;
@@ -427,6 +456,10 @@
 				{
 					ProductGroup = 054B612E1FC75E7C00DA06E2 /* Products */;
 					ProjectRef = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+				},
+				{
+					ProductGroup = 054B61661FC7612A00DA06E2 /* Products */;
+					ProjectRef = 054B61651FC7612A00DA06E2 /* XSKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -543,6 +576,13 @@
 			remoteRef = 054B615B1FC75E7D00DA06E2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		054B61781FC7612A00DA06E2 /* XSKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XSKit.framework;
+			remoteRef = 054B61771FC7612A00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -573,6 +613,11 @@
 			isa = PBXTargetDependency;
 			name = CapstoneFramework;
 			targetProxy = 054B615D1FC75E8700DA06E2 /* PBXContainerItemProxy */;
+		};
+		054B617A1FC7613700DA06E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XSKit;
+			targetProxy = 054B61791FC7613700DA06E2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

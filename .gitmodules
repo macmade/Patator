@@ -4,3 +4,6 @@
 [submodule "Submodules/capstone"]
 	path = Submodules/capstone
 	url = https://github.com/macmade/capstone.git
+[submodule "Submodules/XSKit"]
+	path = Submodules/XSKit
+	url = https://github.com/macmade/XSKit.git
