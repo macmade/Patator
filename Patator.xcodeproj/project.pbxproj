@@ -10,7 +10,137 @@
 		054B60BA1FC7562300DA06E2 /* ApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B60B61FC7562300DA06E2 /* ApplicationDelegate.swift */; };
 		054B60BB1FC7562300DA06E2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054B60B81FC7562300DA06E2 /* MainMenu.xib */; };
 		054B60BE1FC7579A00DA06E2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 054B60BD1FC7579A00DA06E2 /* README.md */; };
+		054B61601FC75E8A00DA06E2 /* Capstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054B61441FC75E7D00DA06E2 /* Capstone.framework */; };
+		054B61621FC75E9700DA06E2 /* Capstone.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054B61441FC75E7D00DA06E2 /* Capstone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		054B613F1FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCFE23BD19DDCC2D00EF8EA9;
+			remoteInfo = CapstoneStatic;
+		};
+		054B61411FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCFE23CD19DDCC9500EF8EA9;
+			remoteInfo = CapstoneDynamic;
+		};
+		054B61431FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC474F6819DE6F3B00BCA449;
+			remoteInfo = CapstoneFramework;
+		};
+		054B61451FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC474E6419DDEA5F00BCA449;
+			remoteInfo = test_basic;
+		};
+		054B61471FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC474E8619DDEAA200BCA449;
+			remoteInfo = test_arm;
+		};
+		054B61491FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC474EEA19DDEAE400BCA449;
+			remoteInfo = test_arm64;
+		};
+		054B614B1FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC474E9119DDEAA700BCA449;
+			remoteInfo = test_detail;
+		};
+		054B614D1FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC5BFF4019EE544E008CA585;
+			remoteInfo = test_iter;
+		};
+		054B614F1FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC474E9C19DDEAAC00BCA449;
+			remoteInfo = test_mips;
+		};
+		054B61511FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC474EA719DDEAB000BCA449;
+			remoteInfo = test_ppc;
+		};
+		054B61531FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC474EB219DDEAB700BCA449;
+			remoteInfo = test_skipdata;
+		};
+		054B61551FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC474EBD19DDEABC00BCA449;
+			remoteInfo = test_sparc;
+		};
+		054B61571FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC474EC819DDEAC100BCA449;
+			remoteInfo = test_systemz;
+		};
+		054B61591FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC474ED319DDEAC600BCA449;
+			remoteInfo = test_x86;
+		};
+		054B615B1FC75E7D00DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC474EDE19DDEACC00BCA449;
+			remoteInfo = test_xcore;
+		};
+		054B615D1FC75E8700DA06E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC474F6719DE6F3B00BCA449;
+			remoteInfo = CapstoneFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		054B61611FC75E8F00DA06E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				054B61621FC75E9700DA06E2 /* Capstone.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		054B60A41FC755D500DA06E2 /* Patator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +183,7 @@
 		054B60E91FC75ACF00DA06E2 /* C++.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "C++.xcconfig"; sourceTree = "<group>"; };
 		054B60EA1FC75ACF00DA06E2 /* All-Languages.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "All-Languages.xcconfig"; sourceTree = "<group>"; };
 		054B60EB1FC75ACF00DA06E2 /* Preprocessing.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Preprocessing.xcconfig; sourceTree = "<group>"; };
+		054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Capstone.xcodeproj; path = Submodules/capstone/xcode/Capstone.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054B61601FC75E8A00DA06E2 /* Capstone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,10 +201,12 @@
 		054B609B1FC755D500DA06E2 = {
 			isa = PBXGroup;
 			children = (
+				054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */,
 				054B60C11FC75ACF00DA06E2 /* xcconfig */,
 				054B60BD1FC7579A00DA06E2 /* README.md */,
 				054B60A61FC755D500DA06E2 /* Patator */,
 				054B60A51FC755D500DA06E2 /* Products */,
+				054B615F1FC75E8A00DA06E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,6 +343,35 @@
 			path = Warnings;
 			sourceTree = "<group>";
 		};
+		054B612E1FC75E7C00DA06E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				054B61401FC75E7D00DA06E2 /* libcapstone.a */,
+				054B61421FC75E7D00DA06E2 /* libcapstone.dylib */,
+				054B61441FC75E7D00DA06E2 /* Capstone.framework */,
+				054B61461FC75E7D00DA06E2 /* test */,
+				054B61481FC75E7D00DA06E2 /* test_arm */,
+				054B614A1FC75E7D00DA06E2 /* test_arm64 */,
+				054B614C1FC75E7D00DA06E2 /* test_detail */,
+				054B614E1FC75E7D00DA06E2 /* test_iter */,
+				054B61501FC75E7D00DA06E2 /* test_mips */,
+				054B61521FC75E7D00DA06E2 /* test_ppc */,
+				054B61541FC75E7D00DA06E2 /* test_skipdata */,
+				054B61561FC75E7D00DA06E2 /* test_sparc */,
+				054B61581FC75E7D00DA06E2 /* test_systemz */,
+				054B615A1FC75E7D00DA06E2 /* test_x86 */,
+				054B615C1FC75E7D00DA06E2 /* test_xcore */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		054B615F1FC75E8A00DA06E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,10 +382,12 @@
 				054B60A01FC755D500DA06E2 /* Sources */,
 				054B60A11FC755D500DA06E2 /* Frameworks */,
 				054B60A21FC755D500DA06E2 /* Resources */,
+				054B61611FC75E8F00DA06E2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				054B615E1FC75E8700DA06E2 /* PBXTargetDependency */,
 			);
 			name = Patator;
 			productName = Patator;
@@ -256,12 +421,127 @@
 			mainGroup = 054B609B1FC755D500DA06E2;
 			productRefGroup = 054B60A51FC755D500DA06E2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 054B612E1FC75E7C00DA06E2 /* Products */;
+					ProjectRef = 054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				054B60A31FC755D500DA06E2 /* Patator */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		054B61401FC75E7D00DA06E2 /* libcapstone.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcapstone.a;
+			remoteRef = 054B613F1FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B61421FC75E7D00DA06E2 /* libcapstone.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libcapstone.dylib;
+			remoteRef = 054B61411FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B61441FC75E7D00DA06E2 /* Capstone.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Capstone.framework;
+			remoteRef = 054B61431FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B61461FC75E7D00DA06E2 /* test */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			name = test;
+			path = test_basic;
+			remoteRef = 054B61451FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B61481FC75E7D00DA06E2 /* test_arm */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_arm;
+			remoteRef = 054B61471FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B614A1FC75E7D00DA06E2 /* test_arm64 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_arm64;
+			remoteRef = 054B61491FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B614C1FC75E7D00DA06E2 /* test_detail */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_detail;
+			remoteRef = 054B614B1FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B614E1FC75E7D00DA06E2 /* test_iter */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_iter;
+			remoteRef = 054B614D1FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B61501FC75E7D00DA06E2 /* test_mips */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_mips;
+			remoteRef = 054B614F1FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B61521FC75E7D00DA06E2 /* test_ppc */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_ppc;
+			remoteRef = 054B61511FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B61541FC75E7D00DA06E2 /* test_skipdata */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_skipdata;
+			remoteRef = 054B61531FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B61561FC75E7D00DA06E2 /* test_sparc */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_sparc;
+			remoteRef = 054B61551FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B61581FC75E7D00DA06E2 /* test_systemz */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_systemz;
+			remoteRef = 054B61571FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B615A1FC75E7D00DA06E2 /* test_x86 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_x86;
+			remoteRef = 054B61591FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054B615C1FC75E7D00DA06E2 /* test_xcore */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_xcore;
+			remoteRef = 054B615B1FC75E7D00DA06E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		054B60A21FC755D500DA06E2 /* Resources */ = {
@@ -285,6 +565,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		054B615E1FC75E8700DA06E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CapstoneFramework;
+			targetProxy = 054B615D1FC75E8700DA06E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		054B60B81FC7562300DA06E2 /* MainMenu.xib */ = {
