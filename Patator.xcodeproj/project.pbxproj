@@ -19,6 +19,40 @@
 		054B60B61FC7562300DA06E2 /* ApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDelegate.swift; sourceTree = "<group>"; };
 		054B60B91FC7562300DA06E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		054B60BD1FC7579A00DA06E2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		054B60C21FC75ACF00DA06E2 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		054B60C31FC75ACF00DA06E2 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		054B60C41FC75ACF00DA06E2 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		054B60C71FC75ACF00DA06E2 /* Signing.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		054B60C81FC75ACF00DA06E2 /* Architectures.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Architectures.xcconfig; sourceTree = "<group>"; };
+		054B60CA1FC75ACF00DA06E2 /* Issues.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Issues.xcconfig; sourceTree = "<group>"; };
+		054B60CC1FC75ACF00DA06E2 /* Apple-APIs.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Apple-APIs.xcconfig"; sourceTree = "<group>"; };
+		054B60CD1FC75ACF00DA06E2 /* Generic-Issues.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Generic-Issues.xcconfig"; sourceTree = "<group>"; };
+		054B60CE1FC75ACF00DA06E2 /* Security.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Security.xcconfig; sourceTree = "<group>"; };
+		054B60CF1FC75ACF00DA06E2 /* Objective-C.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Objective-C.xcconfig"; sourceTree = "<group>"; };
+		054B60D01FC75ACF00DA06E2 /* Analysis-Policy.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Analysis-Policy.xcconfig"; sourceTree = "<group>"; };
+		054B60D11FC75ACF00DA06E2 /* Deployment.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Deployment.xcconfig; sourceTree = "<group>"; };
+		054B60D21FC75ACF00DA06E2 /* Build-Options.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Build-Options.xcconfig"; sourceTree = "<group>"; };
+		054B60D31FC75ACF00DA06E2 /* Swift-Compiler.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Swift-Compiler.xcconfig"; sourceTree = "<group>"; };
+		054B60D41FC75ACF00DA06E2 /* Static-Analyzer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Static-Analyzer.xcconfig"; sourceTree = "<group>"; };
+		054B60D61FC75ACF00DA06E2 /* Warnings-Policies.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Warnings-Policies.xcconfig"; sourceTree = "<group>"; };
+		054B60D71FC75ACF00DA06E2 /* Code-Generation.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Code-Generation.xcconfig"; sourceTree = "<group>"; };
+		054B60D81FC75ACF00DA06E2 /* Language.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Language.xcconfig; sourceTree = "<group>"; };
+		054B60D91FC75ACF00DA06E2 /* General.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = General.xcconfig; sourceTree = "<group>"; };
+		054B60DA1FC75ACF00DA06E2 /* Apple-LLVM.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Apple-LLVM.xcconfig"; sourceTree = "<group>"; };
+		054B60DD1FC75ACF00DA06E2 /* Modules.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Modules.xcconfig; sourceTree = "<group>"; };
+		054B60DE1FC75ACF00DA06E2 /* Objective-C.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Objective-C.xcconfig"; sourceTree = "<group>"; };
+		054B60DF1FC75ACF00DA06E2 /* C++.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "C++.xcconfig"; sourceTree = "<group>"; };
+		054B60E01FC75ACF00DA06E2 /* Code-Generation.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Code-Generation.xcconfig"; sourceTree = "<group>"; };
+		054B60E11FC75ACF00DA06E2 /* Address-Sanitizer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Address-Sanitizer.xcconfig"; sourceTree = "<group>"; };
+		054B60E21FC75ACF00DA06E2 /* Language.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Language.xcconfig; sourceTree = "<group>"; };
+		054B60E31FC75ACF00DA06E2 /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		054B60E41FC75ACF00DA06E2 /* Undefined-Behavior-Sanitizer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Undefined-Behavior-Sanitizer.xcconfig"; sourceTree = "<group>"; };
+		054B60E51FC75ACF00DA06E2 /* Warning-Policies.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Warning-Policies.xcconfig"; sourceTree = "<group>"; };
+		054B60E71FC75ACF00DA06E2 /* Objective-C-ARC.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Objective-C-ARC.xcconfig"; sourceTree = "<group>"; };
+		054B60E81FC75ACF00DA06E2 /* Objective-C.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Objective-C.xcconfig"; sourceTree = "<group>"; };
+		054B60E91FC75ACF00DA06E2 /* C++.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "C++.xcconfig"; sourceTree = "<group>"; };
+		054B60EA1FC75ACF00DA06E2 /* All-Languages.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "All-Languages.xcconfig"; sourceTree = "<group>"; };
+		054B60EB1FC75ACF00DA06E2 /* Preprocessing.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Preprocessing.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +69,7 @@
 		054B609B1FC755D500DA06E2 = {
 			isa = PBXGroup;
 			children = (
+				054B60C11FC75ACF00DA06E2 /* xcconfig */,
 				054B60BD1FC7579A00DA06E2 /* README.md */,
 				054B60A61FC755D500DA06E2 /* Patator */,
 				054B60A51FC755D500DA06E2 /* Products */,
@@ -74,6 +109,104 @@
 				054B60B81FC7562300DA06E2 /* MainMenu.xib */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		054B60C11FC75ACF00DA06E2 /* xcconfig */ = {
+			isa = PBXGroup;
+			children = (
+				054B60C61FC75ACF00DA06E2 /* Common */,
+				054B60C21FC75ACF00DA06E2 /* Common.xcconfig */,
+				054B60C31FC75ACF00DA06E2 /* Debug.xcconfig */,
+				054B60C41FC75ACF00DA06E2 /* Release.xcconfig */,
+			);
+			name = xcconfig;
+			path = Submodules/xcconfig;
+			sourceTree = "<group>";
+		};
+		054B60C61FC75ACF00DA06E2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				054B60DB1FC75ACF00DA06E2 /* Apple-LLVM */,
+				054B60DA1FC75ACF00DA06E2 /* Apple-LLVM.xcconfig */,
+				054B60C81FC75ACF00DA06E2 /* Architectures.xcconfig */,
+				054B60D21FC75ACF00DA06E2 /* Build-Options.xcconfig */,
+				054B60D11FC75ACF00DA06E2 /* Deployment.xcconfig */,
+				054B60C71FC75ACF00DA06E2 /* Signing.xcconfig */,
+				054B60C91FC75ACF00DA06E2 /* Static-Analyzer */,
+				054B60D41FC75ACF00DA06E2 /* Static-Analyzer.xcconfig */,
+				054B60D51FC75ACF00DA06E2 /* Swift-Compiler */,
+				054B60D31FC75ACF00DA06E2 /* Swift-Compiler.xcconfig */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		054B60C91FC75ACF00DA06E2 /* Static-Analyzer */ = {
+			isa = PBXGroup;
+			children = (
+				054B60CB1FC75ACF00DA06E2 /* Issues */,
+				054B60CA1FC75ACF00DA06E2 /* Issues.xcconfig */,
+			);
+			path = "Static-Analyzer";
+			sourceTree = "<group>";
+		};
+		054B60CB1FC75ACF00DA06E2 /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				054B60D01FC75ACF00DA06E2 /* Analysis-Policy.xcconfig */,
+				054B60CC1FC75ACF00DA06E2 /* Apple-APIs.xcconfig */,
+				054B60CD1FC75ACF00DA06E2 /* Generic-Issues.xcconfig */,
+				054B60CF1FC75ACF00DA06E2 /* Objective-C.xcconfig */,
+				054B60CE1FC75ACF00DA06E2 /* Security.xcconfig */,
+			);
+			path = Issues;
+			sourceTree = "<group>";
+		};
+		054B60D51FC75ACF00DA06E2 /* Swift-Compiler */ = {
+			isa = PBXGroup;
+			children = (
+				054B60D71FC75ACF00DA06E2 /* Code-Generation.xcconfig */,
+				054B60D91FC75ACF00DA06E2 /* General.xcconfig */,
+				054B60D81FC75ACF00DA06E2 /* Language.xcconfig */,
+				054B60D61FC75ACF00DA06E2 /* Warnings-Policies.xcconfig */,
+			);
+			path = "Swift-Compiler";
+			sourceTree = "<group>";
+		};
+		054B60DB1FC75ACF00DA06E2 /* Apple-LLVM */ = {
+			isa = PBXGroup;
+			children = (
+				054B60E11FC75ACF00DA06E2 /* Address-Sanitizer.xcconfig */,
+				054B60E01FC75ACF00DA06E2 /* Code-Generation.xcconfig */,
+				054B60DC1FC75ACF00DA06E2 /* Language */,
+				054B60E21FC75ACF00DA06E2 /* Language.xcconfig */,
+				054B60EB1FC75ACF00DA06E2 /* Preprocessing.xcconfig */,
+				054B60E41FC75ACF00DA06E2 /* Undefined-Behavior-Sanitizer.xcconfig */,
+				054B60E51FC75ACF00DA06E2 /* Warning-Policies.xcconfig */,
+				054B60E61FC75ACF00DA06E2 /* Warnings */,
+				054B60E31FC75ACF00DA06E2 /* Warnings.xcconfig */,
+			);
+			path = "Apple-LLVM";
+			sourceTree = "<group>";
+		};
+		054B60DC1FC75ACF00DA06E2 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				054B60DF1FC75ACF00DA06E2 /* C++.xcconfig */,
+				054B60DD1FC75ACF00DA06E2 /* Modules.xcconfig */,
+				054B60DE1FC75ACF00DA06E2 /* Objective-C.xcconfig */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		054B60E61FC75ACF00DA06E2 /* Warnings */ = {
+			isa = PBXGroup;
+			children = (
+				054B60EA1FC75ACF00DA06E2 /* All-Languages.xcconfig */,
+				054B60E91FC75ACF00DA06E2 /* C++.xcconfig */,
+				054B60E71FC75ACF00DA06E2 /* Objective-C-ARC.xcconfig */,
+				054B60E81FC75ACF00DA06E2 /* Objective-C.xcconfig */,
+			);
+			path = Warnings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,107 +300,15 @@
 /* Begin XCBuildConfiguration section */
 		054B60B01FC755D500DA06E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 054B60C31FC75ACF00DA06E2 /* Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		054B60B11FC755D500DA06E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 054B60C41FC75ACF00DA06E2 /* Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -275,14 +316,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Patator/Patator.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 326Y53CJMD;
 				INFOPLIST_FILE = Patator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.Patator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -290,14 +327,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Patator/Patator.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 326Y53CJMD;
 				INFOPLIST_FILE = Patator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.Patator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
