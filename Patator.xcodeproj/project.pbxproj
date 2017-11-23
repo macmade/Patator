@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		054B60BA1FC7562300DA06E2 /* ApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B60B61FC7562300DA06E2 /* ApplicationDelegate.swift */; };
 		054B60BB1FC7562300DA06E2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054B60B81FC7562300DA06E2 /* MainMenu.xib */; };
+		054B60BE1FC7579A00DA06E2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 054B60BD1FC7579A00DA06E2 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		054B60AF1FC755D500DA06E2 /* Patator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Patator.entitlements; sourceTree = "<group>"; };
 		054B60B61FC7562300DA06E2 /* ApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDelegate.swift; sourceTree = "<group>"; };
 		054B60B91FC7562300DA06E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		054B60BD1FC7579A00DA06E2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 		054B609B1FC755D500DA06E2 = {
 			isa = PBXGroup;
 			children = (
+				054B60BD1FC7579A00DA06E2 /* README.md */,
 				054B60A61FC755D500DA06E2 /* Patator */,
 				054B60A51FC755D500DA06E2 /* Products */,
 			);
@@ -132,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054B60BE1FC7579A00DA06E2 /* README.md in Resources */,
 				054B60BB1FC7562300DA06E2 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
