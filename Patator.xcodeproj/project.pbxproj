@@ -14,6 +14,9 @@
 		054B61621FC75E9700DA06E2 /* Capstone.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054B61441FC75E7D00DA06E2 /* Capstone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		054B617B1FC7613D00DA06E2 /* XSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054B61781FC7612A00DA06E2 /* XSKit.framework */; };
 		054B617C1FC7614500DA06E2 /* XSKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 054B61781FC7612A00DA06E2 /* XSKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0560AE421FC9F37600D3850B /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560AE411FC9F37600D3850B /* MainWindowController.swift */; };
+		0560AE531FC9F74100D3850B /* Patator.MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0560AE511FC9F74100D3850B /* Patator.MainWindowController.xib */; };
+		0560AE561FC9F7E900D3850B /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560AE551FC9F7E900D3850B /* Preferences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +206,9 @@
 		054B612D1FC75E7C00DA06E2 /* Capstone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Capstone.xcodeproj; path = Submodules/capstone/xcode/Capstone.xcodeproj; sourceTree = "<group>"; };
 		054B61631FC7602D00DA06E2 /* Search-Paths.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Search-Paths.xcconfig"; sourceTree = "<group>"; };
 		054B61651FC7612A00DA06E2 /* XSKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XSKit.xcodeproj; path = Submodules/XSKit/XSKit.xcodeproj; sourceTree = "<group>"; };
+		0560AE411FC9F37600D3850B /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		0560AE521FC9F74100D3850B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Patator.MainWindowController.xib; sourceTree = "<group>"; };
+		0560AE551FC9F7E900D3850B /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				054B60B61FC7562300DA06E2 /* ApplicationDelegate.swift */,
+				0560AE551FC9F7E900D3850B /* Preferences.swift */,
+				0560AE411FC9F37600D3850B /* MainWindowController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -262,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				054B60B81FC7562300DA06E2 /* MainMenu.xib */,
+				0560AE511FC9F74100D3850B /* Patator.MainWindowController.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -591,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				054B60BE1FC7579A00DA06E2 /* README.md in Resources */,
+				0560AE531FC9F74100D3850B /* Patator.MainWindowController.xib in Resources */,
 				054B60BB1FC7562300DA06E2 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,7 +612,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0560AE421FC9F37600D3850B /* MainWindowController.swift in Sources */,
 				054B60BA1FC7562300DA06E2 /* ApplicationDelegate.swift in Sources */,
+				0560AE561FC9F7E900D3850B /* Preferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +640,14 @@
 				054B60B91FC7562300DA06E2 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		0560AE511FC9F74100D3850B /* Patator.MainWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0560AE521FC9F74100D3850B /* Base */,
+			);
+			name = Patator.MainWindowController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

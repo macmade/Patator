@@ -24,48 +24,18 @@
 
 import Cocoa
 
-@NSApplicationMain class ApplicationDelegate: NSObject, NSApplicationDelegate
+class MainWindowController: NSWindowController
 {
-    var mainWindowControllers = [ MainWindowController ]()
-    
-    func applicationDidFinishLaunching( _ notification: Notification )
+    public override var windowNibName: NSNib.Name?
     {
-        NotificationCenter.default.addObserver( self, selector: #selector( windowWillClose ), name: NSWindow.willCloseNotification, object: nil )
-        self.newDocument( nil )
-        
-        Preferences.shared.lastStart = Date()
+        return NSNib.Name( NSStringFromClass( type( of: self ) ) )
     }
     
-    func applicationWillTerminate( _ notification: Notification )
+    public override func windowDidLoad()
     {
-        NotificationCenter.default.removeObserver( self )
-    }
-    
-    func applicationShouldTerminateAfterLastWindowClosed( _ sender: NSApplication ) -> Bool
-    {
-        return false
-    }
-    
-    @IBAction func newDocument( _ sender: Any? )
-    {
-        let controller = MainWindowController()
+        super.windowDidLoad()
         
-        if( Preferences.shared.lastStart == nil )
-        {
-            controller.window?.center()
-        }
-        
-        self.mainWindowControllers.append( controller )
-        controller.window?.makeKeyAndOrderFront( sender )
-    }
-    
-    @objc public func windowWillClose( _ notification: Notification )
-    {
-        guard let window = ( notification.object as AnyObject? ) as? NSWindow else
-        {
-            return
-        }
-        
-        self.mainWindowControllers = self.mainWindowControllers.filter{ $0 != window.windowController }
+        self.window?.titlebarAppearsTransparent = true
+        self.window?.titleVisibility            = .hidden
     }
 }
