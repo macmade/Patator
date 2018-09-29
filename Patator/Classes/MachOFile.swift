@@ -24,7 +24,7 @@
 
 import Foundation
 
-public class MachOFile
+@objc public class MachOFile: NSObject
 {
     public enum Error: Swift.Error
     {

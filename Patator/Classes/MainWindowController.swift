@@ -26,7 +26,7 @@ import Cocoa
 
 public class MainWindowController: NSWindowController, NSWindowDelegate
 {
-    public private( set ) var file: MachOFile?
+    @objc public private( set ) dynamic var file: MachOFile?
     
     public override var windowNibName: NSNib.Name?
     {

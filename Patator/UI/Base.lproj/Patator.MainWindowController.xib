@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -12,16 +12,77 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="MainWindow" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="Patator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="MainWindow" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="800" height="500"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
             <value key="minSize" type="size" width="800" height="500"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="800" height="500"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="L59-jW-28p">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="500"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YlU-1h-8aI">
+                                <rect key="frame" x="272" y="122" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="c8N-ns-Y4P"/>
+                                    <constraint firstAttribute="height" constant="256" id="qOc-dq-l6u"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="NSApplicationIcon" id="ZLD-KI-1T1"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GWX-ey-HOc">
+                                <rect key="frame" x="351" y="74" width="98" height="32"/>
+                                <buttonCell key="cell" type="push" title="Open File" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DXF-m8-JBY">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openDocument:" target="-2" id="eyC-Qh-0yl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="YlU-1h-8aI" firstAttribute="centerX" secondItem="L59-jW-28p" secondAttribute="centerX" id="3KB-JJ-tsJ"/>
+                            <constraint firstItem="YlU-1h-8aI" firstAttribute="centerY" secondItem="L59-jW-28p" secondAttribute="centerY" id="44y-DA-BdO"/>
+                            <constraint firstItem="GWX-ey-HOc" firstAttribute="top" secondItem="YlU-1h-8aI" secondAttribute="bottom" constant="20" id="b7G-mR-NuH"/>
+                            <constraint firstItem="GWX-ey-HOc" firstAttribute="centerX" secondItem="YlU-1h-8aI" secondAttribute="centerX" id="evI-rx-zmD"/>
+                        </constraints>
+                        <connections>
+                            <binding destination="-2" name="hidden" keyPath="self.file" id="ps1-cX-fyg">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSIsNotNil</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </customView>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="6Bn-1K-CLb">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="500"/>
+                        <connections>
+                            <binding destination="-2" name="hidden" keyPath="self.file" id="m95-ms-WCQ">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSIsNil</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="L59-jW-28p" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" id="4QX-0z-I2Z"/>
+                    <constraint firstItem="6Bn-1K-CLb" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" id="VUL-Bb-pZE"/>
+                    <constraint firstItem="6Bn-1K-CLb" firstAttribute="height" secondItem="EiT-Mj-1SZ" secondAttribute="height" id="Xg0-wU-ea6"/>
+                    <constraint firstItem="L59-jW-28p" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="ZWg-46-Akr"/>
+                    <constraint firstItem="6Bn-1K-CLb" firstAttribute="width" secondItem="EiT-Mj-1SZ" secondAttribute="width" id="p59-Ju-XlH"/>
+                    <constraint firstItem="L59-jW-28p" firstAttribute="width" secondItem="EiT-Mj-1SZ" secondAttribute="width" id="pZ9-Cp-Er7"/>
+                    <constraint firstItem="L59-jW-28p" firstAttribute="height" secondItem="EiT-Mj-1SZ" secondAttribute="height" id="rTS-p0-Mi9"/>
+                    <constraint firstItem="6Bn-1K-CLb" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="u3Z-Vj-jgK"/>
+                </constraints>
             </view>
         </window>
     </objects>
+    <resources>
+        <image name="NSApplicationIcon" width="128" height="128"/>
+    </resources>
 </document>
