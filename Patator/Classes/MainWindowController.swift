@@ -61,14 +61,39 @@ public class MainWindowController: NSWindowController, NSWindowDelegate
                 return
             }
             
+            var alert: NSAlert?
+            
             do
             {
                 try self.file = MachOFile( url: panel.url! )
             }
+            catch MachOFile.Error.FileDoesNotExist( let file )
+            {
+                alert              = NSAlert()
+                alert?.messageText = "File does not exist: \(file)"
+            }
+            catch MachOFile.Error.FileIsADirectory( let file )
+            {
+                alert              = NSAlert()
+                alert?.messageText = "File is a directory: \(file)"
+            }
+            catch MachOFile.Error.FileIsNotReadable( let file )
+            {
+                alert              = NSAlert()
+                alert?.messageText = "File is not readable: \(file)"
+            }
+            catch MachOFile.Error.InvalidFormat( let file )
+            {
+                alert              = NSAlert()
+                alert?.messageText = "File is invalid: \(file)"
+            }
             catch
             {
-                
+                alert              = NSAlert()
+                alert?.messageText = "Unknown error"
             }
+            
+            alert?.runModal()
         }
     }
 }
