@@ -667,6 +667,7 @@
 			baseConfigurationReference = 054B60C31FC75ACF00DA06E2 /* Debug.xcconfig */;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -675,6 +676,7 @@
 			baseConfigurationReference = 054B60C41FC75ACF00DA06E2 /* Release.xcconfig */;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
