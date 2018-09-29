@@ -22,53 +22,56 @@
  * THE SOFTWARE.
  ******************************************************************************/
 
-import Cocoa
+import Foundation
 
-public class MainWindowController: NSWindowController, NSWindowDelegate
+public class MachOFile
 {
-    public private( set ) var file: MachOFile?
-    
-    public override var windowNibName: NSNib.Name?
+    public enum Error: Swift.Error
     {
-        return NSNib.Name( NSStringFromClass( type( of: self ) ) )
+        case FileDoesNotExist( String )
+        case FileIsADirectory( String )
+        case FileIsNotReadable( String )
+        case InvalidFormat( String )
     }
     
-    override public func windowDidLoad()
+    public convenience init( url: URL ) throws
     {
-        super.windowDidLoad()
+        var isDir: ObjCBool = false
         
-        self.window?.titlebarAppearsTransparent = true
-        self.window?.titleVisibility            = .hidden
-        self.window?.delegate                   = self
-    }
-    
-    @IBAction public func openDocument( _ sender: Any? )
-    {
-        let panel                      = NSOpenPanel()
-        panel.canSelectHiddenExtension = true
-        panel.canChooseFiles           = true
-        panel.canChooseDirectories     = false
-        panel.allowsMultipleSelection  = false
-        
-        panel.beginSheetModal( for: self.window! )
+        if( FileManager.default.fileExists( atPath: url.path, isDirectory: &isDir ) == false )
         {
-            res in
-            
-            if( res != .OK || panel.url == nil )
-            {
-                self.window?.close()
-                
-                return
-            }
-            
-            do
-            {
-                try self.file = MachOFile( url: panel.url! )
-            }
-            catch
-            {
-                
-            }
+            throw Error.FileDoesNotExist( url.path )
+        }
+        
+        if( isDir.boolValue )
+        {
+            throw Error.FileIsADirectory( url.path )
+        }
+        
+        do
+        {
+            try self.init( data: Data( contentsOf: url ), fromURL: url )
+        }
+        catch
+        {
+            throw Error.FileIsNotReadable( url.path )
+        }
+    }
+    
+    public init( data: Data, fromURL: URL ) throws
+    {
+        if( data.count < 4 )
+        {
+            throw Error.FileIsNotReadable( fromURL.path )
+        }
+        
+        if
+        (
+               ( data[ 0 ] != 0xCA || data[ 1 ] != 0xFE || data[ 2 ] != 0xBA || data[ 3 ] != 0xBE )
+            && ( data[ 0 ] != 0xCF || data[ 1 ] != 0xFA || data[ 2 ] != 0xED || data[ 3 ] != 0xFE )
+        )
+        {
+            throw Error.InvalidFormat( fromURL.path )
         }
     }
 }

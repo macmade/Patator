@@ -2,6 +2,7 @@ Patator
 =======
 
 [![Build Status](https://img.shields.io/travis/macmade/Patator.svg?branch=master&style=flat)](https://travis-ci.org/macmade/Patator)
+[![Coverage Status](https://img.shields.io/coveralls/macmade/Patator.svg?branch=master&style=flat)](https://coveralls.io/r/macmade/Patator?branch=master)
 [![Issues](http://img.shields.io/github/issues/macmade/Patator.svg?style=flat)](https://github.com/macmade/Patator/issues)
 ![Status](https://img.shields.io/badge/status-prototype-orange.svg?style=flat)
 ![License](https://img.shields.io/badge/license-mit-brightgreen.svg?style=flat)

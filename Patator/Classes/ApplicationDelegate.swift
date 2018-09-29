@@ -24,11 +24,11 @@
 
 import Cocoa
 
-@NSApplicationMain class ApplicationDelegate: NSObject, NSApplicationDelegate
+@NSApplicationMain public class ApplicationDelegate: NSObject, NSApplicationDelegate
 {
     var mainWindowControllers = [ MainWindowController ]()
     
-    func applicationDidFinishLaunching( _ notification: Notification )
+    public func applicationDidFinishLaunching( _ notification: Notification )
     {
         NotificationCenter.default.addObserver( self, selector: #selector( windowWillClose ), name: NSWindow.willCloseNotification, object: nil )
         self.newDocument( nil )
@@ -36,17 +36,27 @@ import Cocoa
         Preferences.shared.lastStart = Date()
     }
     
-    func applicationWillTerminate( _ notification: Notification )
+    public func applicationWillTerminate( _ notification: Notification )
     {
         NotificationCenter.default.removeObserver( self )
     }
     
-    func applicationShouldTerminateAfterLastWindowClosed( _ sender: NSApplication ) -> Bool
+    public func applicationShouldTerminateAfterLastWindowClosed( _ sender: NSApplication ) -> Bool
     {
         return false
     }
     
-    @IBAction func newDocument( _ sender: Any? )
+    @objc func windowWillClose( _ notification: Notification )
+    {
+        guard let window = ( notification.object as AnyObject? ) as? NSWindow else
+        {
+            return
+        }
+        
+        self.mainWindowControllers = self.mainWindowControllers.filter{ $0 != window.windowController }
+    }
+    
+    @IBAction public func newDocument( _ sender: Any? )
     {
         let controller = MainWindowController()
         
@@ -57,15 +67,11 @@ import Cocoa
         
         self.mainWindowControllers.append( controller )
         controller.window?.makeKeyAndOrderFront( sender )
+        controller.openDocument( sender )
     }
     
-    @objc public func windowWillClose( _ notification: Notification )
+    @IBAction public func openDocument( _ sender: Any? )
     {
-        guard let window = ( notification.object as AnyObject? ) as? NSWindow else
-        {
-            return
-        }
-        
-        self.mainWindowControllers = self.mainWindowControllers.filter{ $0 != window.windowController }
+        self.newDocument( sender )
     }
 }

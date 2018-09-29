@@ -17,6 +17,7 @@
 		0560AE421FC9F37600D3850B /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560AE411FC9F37600D3850B /* MainWindowController.swift */; };
 		0560AE531FC9F74100D3850B /* Patator.MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0560AE511FC9F74100D3850B /* Patator.MainWindowController.xib */; };
 		0560AE561FC9F7E900D3850B /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0560AE551FC9F7E900D3850B /* Preferences.swift */; };
+		05C94FA21FD30CCF006BD818 /* MachOFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C94FA11FD30CCF006BD818 /* MachOFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -209,6 +210,7 @@
 		0560AE411FC9F37600D3850B /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		0560AE521FC9F74100D3850B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Patator.MainWindowController.xib; sourceTree = "<group>"; };
 		0560AE551FC9F7E900D3850B /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		05C94FA11FD30CCF006BD818 /* MachOFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachOFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +264,7 @@
 				054B60B61FC7562300DA06E2 /* ApplicationDelegate.swift */,
 				0560AE551FC9F7E900D3850B /* Preferences.swift */,
 				0560AE411FC9F37600D3850B /* MainWindowController.swift */,
+				05C94FA11FD30CCF006BD818 /* MachOFile.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 			files = (
 				0560AE421FC9F37600D3850B /* MainWindowController.swift in Sources */,
 				054B60BA1FC7562300DA06E2 /* ApplicationDelegate.swift in Sources */,
+				05C94FA21FD30CCF006BD818 /* MachOFile.swift in Sources */,
 				0560AE561FC9F7E900D3850B /* Preferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,6 +661,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 054B60C31FC75ACF00DA06E2 /* Debug.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 			};
 			name = Debug;
 		};
@@ -664,6 +669,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 054B60C41FC75ACF00DA06E2 /* Release.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 			};
 			name = Release;
 		};

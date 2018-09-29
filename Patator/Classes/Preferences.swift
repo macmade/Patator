@@ -25,7 +25,7 @@
 import Foundation
 import XSKit
 
-class Preferences: XSKit.Preferences
+public class Preferences: XSKit.Preferences
 {
     public static let shared = Preferences()
     
